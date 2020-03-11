@@ -1,2 +1,65 @@
 /* in stylish-portfolio.min.css wijzig je NIETS */
 /* schrijf in dit bestand je eigen stijlregels om opmaak aan te passen */
+
+/*aanpassingen in header*/
+.masthead{
+    background-image: url(../img/bg2.jpg)!important;
+    filter: ;
+}
+.layer {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.layer .hc{
+    margin-top: 100px!important;
+    color: #ff6600;
+}
+.layer h1{
+    font-family: 'Orbitron', sans-serif;
+}
+
+@media (max-width:700px){
+    .layer h1{
+        font-size: 3em!important;
+    }
+}
+@media (max-width:500px){
+    .layer h1{
+        font-size: 2em!important;
+    }
+}
+.layer .hc h3{
+    color: #ffff;
+}
+.layer .hc a{
+    background-color: rgba(0,0,0,0)!important;
+    border: 1px solid #ff6600!important;
+}
+.layer .hc a:hover{
+    background-color: rgba(255,102,0,0.3)!important;
+}
+.layer>img {
+    position: fixed;
+    top:20px;
+    left: 20px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius:5%;
+}
+
+/*menu kleuren*/
+.menubox{
+    background-color: rgba(0,0,0,0.5)!important;
+    width: 90px;
+    border: 1px solid #ff6600;
+}.menubox:hover{
+     background-color: rgba(255,102,0,0.5)!important;
+}
+
+ /*Nav bg color*/
+ nav{
+     background-color: rgba(0,0,0,0.9)!important;
+ }
