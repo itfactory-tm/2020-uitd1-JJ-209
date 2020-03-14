@@ -1,0 +1,42 @@
+/* stijlregels die enkel voor 404 van toepassing zijn */
+body {
+    background-image: url("../errorimg/4034.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: rgba(255,255,255,1);
+}
+
+
+@media (max-width: 555px) {
+    .d-555-none {
+        display: none;
+    !important;
+    }
+
+    #frown {
+        font-size: 10em !important;
+    }
+}
+
+@media (min-width: 555px) {
+    .d-555-block {
+        display: none;
+    !important;
+    }
+
+    h2 {
+        text-shadow: 0px 0px 5px #000 !important;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 8em;
+    }
+
+    h2 {
+        font-size: 3em;
+       
+    }
+}
