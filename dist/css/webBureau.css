@@ -4,7 +4,6 @@
 /*aanpassingen in header*/
 .masthead{
     background-image: url(../img/bg2.jpg)!important;
-    filter: ;
 }
 .layer {
     background-color: rgba(0, 0, 0, 0.7);
@@ -68,10 +67,42 @@
     width: auto;
     height: 150px;
     border-radius: 50%;
+    transition: 0.5s;
+}
+.pasfoto img:hover{
+    filter:blur(2px);
+}
+.pasfoto p{
+    background-color: gainsboro;
+    padding: 15px;
+    box-shadow: 0 15px 15px gainsboro;
+    transition: 0.5s;
+}
+.pasfoto p:hover{
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 #about a{
     text-decoration: none;
     color: #000000;}
-#about a:hover{
-    font-weight:bold;
+/*onze diensten*/
+.bg-primary{
+    background-color: rgb(0, 115, 159) !important;
+}
+.bdrs-20{
+    border-radius: 20% !important;
+}
+.service-icon{
+    color: #ff6600!important;
+    border: 1px solid #ff6600;
+}
+#services a:hover{
+    background-color: rgba(0,0,0,0.5)!important;
+    color: #fff;
+}
+.bg-foto{
+    background-image: url(../img/bg3.jpg) !important;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
 }
