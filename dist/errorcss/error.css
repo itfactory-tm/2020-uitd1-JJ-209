@@ -1,0 +1,89 @@
+/* stijlregels die voor beide errorpagina's van toepassing zijn */
+/*gemeenschapelijk*/
+body{
+    background: #fff;
+    /*background: linear-gradient(0deg, rgba(88,88,93,1) 0%, rgba(72,72,80,0) 68%, rgba(240,240,240,1) 100%);*/
+    background-position: center;
+    background-attachment:fixed;
+    background-size: cover;
+	
+}
+h1,#frown {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 4em;
+    text-align: center;
+    text-shadow: 0px 0px 5px #000;
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0 0 3px #000;
+}
+.marginTop15{
+    margin-top: 10%;
+}.marginTop5{
+     margin-top: 5%;
+ }
+@media (max-width:768px) {
+    h1 ,#frown{
+        font-size: 5em;
+    }
+    h2{
+        text-align: center;
+        font-size: 2em;
+    }
+}
+@media (min-width:1000px) {
+    h1,#frown{
+        font-size: 7em;
+    }
+    .verkleinMargin{margin-top: 0% !important;}
+}@media (min-width:1300px) {
+    h1,#frown{
+        font-size: 10em;
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+footer a {
+    color: orangered;
+}
+footer a:hover{
+    color: #e9ecef;
+}
+
+@media (max-height: 740px ) {
+    footer {
+        font-size: 12px;
+    }
+}
+.btmMargin{
+    margin-bottom: 100px;
+}
+
+#toHome{
+    font-size: 3em;
+    position: fixed;
+    bottom: 50px;
+    left: 10px;
+    transition: 1s;
+    color: orangered;
+    text-shadow: 7px 7px 10px #000;
+
+
+}
+#toHome :hover{
+    transform: scale(1.2) rotate(360deg);
+
+    transition: 1s;
+}
