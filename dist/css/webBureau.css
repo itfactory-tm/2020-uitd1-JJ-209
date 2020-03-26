@@ -106,3 +106,41 @@
     width: 100%;
     background-size: cover;
 }
+
+#contactus {
+    background-color: transparent;
+    color: #ff6600;
+    text-shadow: 2px 2px 3px #000000;
+}
+
+label {
+    display:block;
+    text-align: left;
+    margin-top: 8px;
+}
+
+textarea {
+    margin: 0px 15px;
+}
+
+button[type="submit"] {
+
+    margin: 8px 0px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid #ff6600;
+    border-radius: 35px;
+    background-image: linear-gradient(to right, #ffcaa6, #ffc39a, #febb8e, #feb483, #fdac77);
+
+}
+
+.inputstijl {
+    border: 1px solid #ff6600;
+}
+
+.inputstijl:focus {
+    border: 1px solid #ff6600;
+    box-shadow: 2px 2px 3px #ff6600;
+}
+
