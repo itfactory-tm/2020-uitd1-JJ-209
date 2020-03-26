@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyDeveloper - Formulierverwerking</title>
+</head>
+
+<body>
+<h1>Formulierverwerking</h1>
+<hr>
+
 <?php
     if (isset($_POST["voornaam"]) && $_POST["voornaam"] != "") {
         echo "<p> Ingevuld bij voornaam: " . $_POST["voornaam"] . "</p>\n";
@@ -34,3 +47,9 @@ if (isset($_POST["vraag"]) && $_POST["vraag"] != "") {
 } else {
     echo "<p> Er is geen vraag ingevuld </p>\n";
 }
+
+?>
+
+</body>
+
+</html>
