@@ -45,7 +45,7 @@ if (isset($_POST["telefoonnummer"]) && $_POST["telefoonnummer"] != "") {
 }
 
 if (isset($_POST["onderwerp"]) && $_POST["onderwerp"] != "") {
-    echo "<p> Ingevuld bij telefoonnummer: " . $_POST["onderwerp"] . "</p>\n";
+    echo "<p> Ingevuld bij onderwerp: " . $_POST["onderwerp"] . "</p>\n";
 } else {
     echo "<p> Onderwerp werd niet ingevuld </p>\n";
 }
