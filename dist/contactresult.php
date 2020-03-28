@@ -12,6 +12,7 @@
     <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#f38800">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#f6f6f6">
+
 </head>
 
 <body>
@@ -59,6 +60,7 @@ if (isset($_POST["vraag"]) && $_POST["vraag"] != "") {
 <p>
 <a href="https://mydeveloper.sinners.be" class="btn btn-xl btn-light">Terug naar homepagina</a>
 </p>
+
 </body>
 
 </html>
