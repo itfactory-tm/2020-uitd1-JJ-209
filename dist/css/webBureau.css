@@ -4,7 +4,6 @@
 /*aanpassingen in header*/
 .masthead{
     background-image: url(../img/bg2.jpg)!important;
-    filter: ;
 }
 .layer {
     background-color: rgba(0, 0, 0, 0.7);
@@ -21,7 +20,6 @@
 .layer h1,h1{
     font-family: 'Orbitron', sans-serif!important;
 }
-
 @media (max-width:700px){
     .layer h1{
         font-size: 3em!important;
@@ -68,10 +66,83 @@
     width: auto;
     height: 150px;
     border-radius: 50%;
+    transition: 0.5s;
+}
+.pasfoto img:hover{
+    filter:blur(2px);
+}
+.pasfoto p{
+    background-color: gainsboro;
+    padding: 15px;
+    box-shadow: 0 15px 15px gainsboro;
+    transition: 0.5s;
+}
+.pasfoto p:hover{
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 #about a{
     text-decoration: none;
     color: #000000;}
-#about a:hover{
-    font-weight:bold;
+/*onze diensten*/
+.bg-primary{
+    background-color: rgb(0, 115, 159) !important;
 }
+.bdrs-20{
+    border-radius: 20% !important;
+}
+.service-icon{
+    color: #ff6600!important;
+    border: 1px solid #ff6600;
+}
+#services a:hover{
+    background-color: rgba(0,0,0,0.5)!important;
+    color: #fff;
+}
+.bg-foto{
+    background-image: url(../img/bg3.jpg) !important;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+}
+
+#contactus {
+    background-color: transparent;
+    color: #ff6600;
+    text-shadow: 2px 2px 3px #000000;
+}
+.footer{padding: 5px!important;}
+label {
+    display:block;
+    text-align: left;
+    margin-top: 8px;
+}
+
+textarea {
+    margin: 0px 15px;
+}
+
+button[type="submit"] {
+
+    margin: 8px 0;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid #ff6600;
+    border-radius: 35px;
+    background-image: linear-gradient(to top, #ffcaa6, #ffc39a, #febb8e, #feb483, #fdac77);
+
+}
+button[type="submit"]:hover{
+    background-image: linear-gradient(to bottom, #ffcaa6, #ffc39a, #febb8e, #feb483, #fdac77);
+}
+
+.inputstijl {
+    border: 1px solid #ff6600;
+}
+
+.inputstijl:focus {
+    border: 1px solid #ff6600;
+    box-shadow: 2px 2px 3px #ff6600;
+}
+
