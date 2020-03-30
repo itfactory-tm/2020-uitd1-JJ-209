@@ -144,3 +144,41 @@ button[type="submit"] {
     box-shadow: 2px 2px 3px #ff6600;
 }
 
+.portfolio {
+    padding-bottom: 120px;
+}
+
+#brent {
+    display: none;
+}
+
+#albert {
+    display: none
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h3 > span {
+    padding: 0;
+    color: black;
+    background-color: white;
+    text-shadow: none;
+    transition: 1s;
+}
+
+.move_animation {
+    padding: 0 25px;
+}
+
+#uitdaging_text {
+    display: none;
+}
+
+.portfolio_titels {
+    background-color: transparent;
+    color: #ff6600;
+    text-shadow: 2px 2px 1px #000000;
+}
+
