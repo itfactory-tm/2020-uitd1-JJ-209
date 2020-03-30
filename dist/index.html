@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="css/webBureau.css">
 
 
+
 </head>
 <body id="page-top">
 <!-- Navigation -->
@@ -166,58 +167,48 @@
     <div class="container">
         <div class="content-section-heading text-center">
             <h3 class="text-secondary mb-0">Portfolio</h3>
-            <h2 class="mb-5">Recent Projects</h2>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h2>Stationary</h2>
-                            <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h2>Ice Cream</h2>
-                            <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream
-                                cone!</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h2>Strawberries</h2>
-                            <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on
-                                top!</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <h2>Workspace</h2>
-                            <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-                </a>
-            </div>
+            <h2 class="mb-5 portfolio_titels">Recent Projects</h2>
         </div>
     </div>
 </section>
+
+
+<div class="container portfolio">
+    <div class="text-center">
+        <div class="row">
+            <h3 class="col-sm-12 brent portfolio_titels">&lbrace; <span class="move_brent">Brent</span> &rbrace;</h3>
+            <p id="brent" class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium aliquid animi cupiditate
+                iste veritatis. Amet animi autem blanditiis, consequuntur, cumque, distinctio eligendi eum explicabo nobis
+                quasi repudiandae sapiente voluptas!</p>
+
+            <h3 class="col-sm-12 albert portfolio_titels">&lbrace; <span class="move_albert">Albert</span> &rbrace;</h3>
+            <p id="albert" class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda culpa earum eius
+                eligendi eos expedita id impedit, laborum, minus, mollitia nihil porro quas quibusdam quos sequi sint
+                tempore ut?</p>
+
+            <h3 class="uitdaging1 col-sm-12 portfolio_titels">&lbrace; <span class="move_uitdaging1">Uitdaging 1</span> &rbrace;</h3>
+            <p id="uitdaging_text" class="col-sm-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam eaque esse modi neque odio quasi totam vel?
+                Adipisci aliquam, debitis nisi nulla, officiis quasi sed sunt, tenetur velit vero voluptates!</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Call to Action -->
 <section class="content-section bg-primary text-white">
@@ -304,6 +295,57 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
 <script src="js/stylish-portfolio.min.js"></script>
+<script src="js/jquery-3.4.1.js"></script>
+
+
+
+<script>
+
+    $(".uitdaging1").click( function() {
+        $( '#brent, #albert' ).hide(1000);
+        $('.move_brent, .move_albert').removeClass('move_animation');
+
+        setTimeout(function () {
+            $('.move_uitdaging1').addClass('move_animation');
+        }, 1000);
+
+
+        setTimeout(function () {
+            $( '#uitdaging_text' ).show(1000);
+        }, 1500)
+    });
+
+    $(".brent").click( function() {
+        $( '#uitdaging_text, #albert' ).hide(1000);
+        $('.move_uitdaging1, .move_albert').removeClass('move_animation');
+
+        setTimeout(function () {
+            $('.move_brent').addClass('move_animation');
+        }, 1000);
+
+        setTimeout(function () {
+            $( '#brent' ).show(1000);
+        }, 1500)
+
+    });
+
+    $(".albert").click( function() {
+        $( '#brent, #uitdaging_text' ).hide(1000);
+        $('.move_brent, .move_uitdaging1').removeClass('move_animation');
+
+        setTimeout(function () {
+            $('.move_albert').addClass('move_animation');
+        }, 1000);
+
+        setTimeout(function () {
+            $( '#albert' ).show(1000);
+        }, 1500)
+    });
+
+
+
+
+</script>
 
 </body>
 
