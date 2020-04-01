@@ -104,6 +104,7 @@
     height: 200px;
     width: 100%;
     background-size: cover;
+    background-position: center;
 }
 
 #contactus {
@@ -191,15 +192,17 @@ h3 > span {
 
 .portfolio_onderwerpen {
     font-size: 37px;
+    cursor: pointer;
 }
 
 #portfolio {
-    padding-bottom: 0px !important;
+    padding-bottom: 0 !important;
 }
 
 .portfolio_pasfoto {
     width: auto;
     height: 150px;
+    margin: 20px 0;
 }
 
 .portfolio_tekst {
@@ -207,7 +210,7 @@ h3 > span {
 }
 
 #coming-soon {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .all-info {
@@ -225,6 +228,10 @@ h3 > span {
 
     .portfolio_onderwerpen {
         font-size: 60px;
+    }
+
+    #coming-soon {
+        font-size: 50px;
     }
 }
 
@@ -248,7 +255,6 @@ h3 > span {
         font-size: 80px;
     }
 }
-
 
 
 
