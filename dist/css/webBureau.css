@@ -162,9 +162,6 @@ button[type="submit"]:hover{
     display: none
 }
 
-h3 {
-    font-size: 30px;
-}
 
 h3 > span {
     padding: 0;
@@ -172,6 +169,10 @@ h3 > span {
     background-color: white;
     text-shadow: none;
     transition: 1s;
+}
+
+.uitdaging1 {
+    font-size: 37px;
 }
 
 .move_animation {
@@ -187,4 +188,72 @@ h3 > span {
     color: #ff6600;
     text-shadow: 2px 2px 1px #000000;
 }
+
+.portfolio_onderwerpen {
+    font-size: 37px;
+}
+
+#portfolio {
+    padding-bottom: 0px !important;
+}
+
+.portfolio_pasfoto {
+    width: auto;
+    height: 150px;
+}
+
+.portfolio_tekst {
+    margin: 20px 0;
+}
+
+#coming-soon {
+    font-size: 50px;
+}
+
+.all-info {
+    margin: 40px 0;
+}
+
+
+/*media settings*/
+
+/*TABLET*/
+@media (min-width: 768px) {
+    h3.text-secondary {
+        font-size: 20px !important;
+    }
+
+    .portfolio_onderwerpen {
+        font-size: 60px;
+    }
+}
+
+
+/*LAPTOP*/
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 2560px) {
+
+    h3 {
+        font-size: 50px !important;
+    }
+
+    .portfolio_onderwerpen {
+        font-size: 80px;
+    }
+}
+
+
+
+
+
+
+
+
 
