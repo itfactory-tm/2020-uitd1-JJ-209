@@ -104,6 +104,15 @@
     height: 200px;
     width: 100%;
     background-size: cover;
+    background-position: center;
+}
+
+.bg-foto-contact {
+    background-image: url(../img/bg4.jpg) !important;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: bottom center;
 }
 
 #contactus {
@@ -191,15 +200,24 @@ h3 > span {
 
 .portfolio_onderwerpen {
     font-size: 37px;
+    cursor: pointer;
 }
 
 #portfolio {
-    padding-bottom: 0px !important;
+    padding-bottom: 0 !important;
 }
 
 .portfolio_pasfoto {
     width: auto;
     height: 150px;
+    margin: 20px 0;
+    /*border-radius: 50%;*/
+}
+
+.portfolio_banner {
+    width: auto;
+    height: 150px;
+    margin: 20px 0;
 }
 
 .portfolio_tekst {
@@ -207,7 +225,7 @@ h3 > span {
 }
 
 #coming-soon {
-    font-size: 50px;
+    font-size: 35px;
 }
 
 .all-info {
@@ -226,11 +244,32 @@ h3 > span {
     .portfolio_onderwerpen {
         font-size: 60px;
     }
+
+    #coming-soon {
+        font-size: 50px;
+    }
 }
 
 
 /*LAPTOP*/
 @media (min-width: 992px) {
+    .portfolio_tekst {
+        /*margin: 35px 0;*/
+        font-size: 18px;
+    }
+
+    .portfolio_pasfoto {
+        width: auto;
+        height: 250px;
+        margin: 20px 0;
+        /*border-radius: 50%;*/
+    }
+
+    .portfolio_banner {
+        width: auto;
+        height: 250px;
+        margin: 20px 0;
+    }
 
 }
 
@@ -248,7 +287,6 @@ h3 > span {
         font-size: 80px;
     }
 }
-
 
 
 
