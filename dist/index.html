@@ -237,7 +237,7 @@
                 </div>
             </div>
 
-            <h3 class="uitdaging1 col-sm-12 portfolio_titels portfolio_onderwerpen">&lbrace; <span class="move_uitdaging1">Uitdaging 2</span> &rbrace;</h3>
+            <h3 class="uitdaging2 col-sm-12 portfolio_titels portfolio_onderwerpen">&lbrace; <span class="move_uitdaging2">Uitdaging 2</span> &rbrace;</h3>
             <div  id="uitdaging_text" class="col-sm-12 all-info">
 
                 <!--                TEKST-->
@@ -273,26 +273,26 @@
         <form action="https://mydeveloper.sinners.be/contactresult.php" method="post">
                 <div class="row">
                     <div class="col-6">
-                        <label>Voornaam <sup>*</sup></label>
+                        <label for="voornaam">Voornaam <sup>*</sup></label>
                         <input type="text" id="voornaam" name="voornaam" class="form-control inputstijl" placeholder="Voornaam" required>
                     </div>
                     <div class="col-6">
-                        <label>Achternaam <sup>*</sup></label>
+                        <label for="achternaam">Achternaam <sup>*</sup></label>
                         <input type="text" id="achternaam" name="achternaam" class="form-control inputstijl" placeholder="Achternaam" required>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <label>Email <sup>*</sup></label>
-                        <input type="text" id="email" name="email" class="form-control inputstijl" placeholder="Vul hier uw email in" required>
+                        <label for="email">Email <sup>*</sup></label>
+                        <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control inputstijl" placeholder="Vul hier uw email in" required>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <label>Telefoonnummer</label>
+                        <label for="telefoonnummer">Telefoonnummer</label>
                         <input type="text" id="telefoonnummer" name="telefoonnummer" class="form-control inputstijl" placeholder="Vul hier uw telefoonnummer in">
                     </div>
                     <div class="col-12">
-                        <label>Onderwerp <sup>*</sup></label>
+                        <label for="onderwerp">Onderwerp <sup>*</sup></label>
                         <input type="text" id="onderwerp" name="onderwerp" class="form-control inputstijl" placeholder="Vul hier uw onderwerp in" required>
                     </div>
-                    <label class="col-12">Vraag: <sup>*</sup></label>
+                    <label for="vraag" class="col-12">Vraag: <sup>*</sup></label>
                     <textarea name="vraag" id="vraag" cols="30" rows="10" class="form-control inputstijl" required></textarea>
                 </div>
             <div>
@@ -345,12 +345,12 @@
 
 <script>
 
-    $(".uitdaging1").click( function() {
+    $(".uitdaging2").click( function() {
         $( '#brent, #albert' ).hide(1000);
         $('.move_brent, .move_albert').removeClass('move_animation');
 
         setTimeout(function () {
-            $('.move_uitdaging1').addClass('move_animation');
+            $('.move_uitdaging2').addClass('move_animation');
         }, 1000);
 
 
@@ -361,7 +361,7 @@
 
     $(".brent").click( function() {
         $( '#uitdaging_text, #albert' ).hide(1000);
-        $('.move_uitdaging1, .move_albert').removeClass('move_animation');
+        $('.move_uitdaging2, .move_albert').removeClass('move_animation');
 
         setTimeout(function () {
             $('.move_brent').addClass('move_animation');
@@ -375,7 +375,7 @@
 
     $(".albert").click( function() {
         $( '#brent, #uitdaging_text' ).hide(1000);
-        $('.move_brent, .move_uitdaging1').removeClass('move_animation');
+        $('.move_brent, .move_uitdaging2').removeClass('move_animation');
 
         setTimeout(function () {
             $('.move_albert').addClass('move_animation');

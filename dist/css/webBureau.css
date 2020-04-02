@@ -3,7 +3,7 @@
 
 /*aanpassingen in header*/
 .masthead{
-    background-image: url(../img/bg2.jpg)!important;
+    background-image: url(/img/bg2.jpg)!important;
 }
 .layer {
     background-color: rgba(0, 0, 0, 0.7);
@@ -100,7 +100,7 @@
     color: #fff;
 }
 .bg-foto{
-    background-image: url(../img/bg3.jpg) !important;
+    background-image: url(/img/bg3.jpg) !important;
     height: 200px;
     width: 100%;
     background-size: cover;
@@ -108,7 +108,7 @@
 }
 
 .bg-foto-contact {
-    background-image: url(../img/bg4.jpg) !important;
+    background-image: url(/img/bg4.jpg) !important;
     height: 200px;
     width: 100%;
     background-size: cover;
@@ -180,7 +180,7 @@ h3 > span {
     transition: 1s;
 }
 
-.uitdaging1 {
+.uitdaging2 {
     font-size: 37px;
 }
 
