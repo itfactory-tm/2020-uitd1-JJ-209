@@ -280,13 +280,19 @@
                         <label for="achternaam">Achternaam <sup>*</sup></label>
                         <input type="text" id="achternaam" name="achternaam" class="form-control inputstijl" placeholder="Achternaam" required>
                     </div>
+					<div class="col-6">
+                        <label for="geslacht">Geslacht <sup>*</sup></label>
+                        man<input type="radio" id="man" name="geslacht" class="form-control inputstijl" required>
+						vrouw<input type="radio" id="vrouw" name="geslacht" class="form-control inputstijl" required>
+						
+                    </div>
                     <div class="col-md-6 col-sm-12">
                         <label for="email">Email <sup>*</sup></label>
                         <input type="text" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-control inputstijl" placeholder="Vul hier uw email in" required>
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <label for="telefoonnummer">Telefoonnummer</label>
-                        <input type="text" id="telefoonnummer" name="telefoonnummer" class="form-control inputstijl" placeholder="Vul hier uw telefoonnummer in">
+                        <label for="telefoonnummer">Telefoonnummer*</label>
+                        <input type="text" id="telefoonnummer" name="telefoonnummer" class="form-control inputstijl" placeholder="Vul hier uw telefoonnummer in" required>
                     </div>
                     <div class="col-12">
                         <label for="onderwerp">Onderwerp <sup>*</sup></label>
@@ -294,7 +300,8 @@
                     </div>
                     <label for="vraag" class="col-12">Vraag: <sup>*</sup></label>
                     <textarea name="vraag" id="vraag" cols="30" rows="10" class="form-control inputstijl" required></textarea>
-                </div>
+                
+				</div>
             <div>
                 <button type="submit" >Verzenden</button>
             </div>
